@@ -47,6 +47,8 @@ class AppColors {
   static const Color info = Color(0xFF1976D2);
 
   /// Neutral Shades
+  static const Color red = Color(0xFFFF0040);
+  static const Color green = Color(0xFF49B583);
   static const Color black = Color(0xFF232323);
   static const Color darkerGrey = Color(0xFF4F4F4F);
   static const Color darkGrey = Color(0xFF939393);
