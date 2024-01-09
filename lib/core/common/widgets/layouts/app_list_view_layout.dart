@@ -5,6 +5,8 @@ class AppListViewLayout extends StatelessWidget {
 
   final Axis scrollDirection;
 
+  final ScrollPhysics physics;
+
   final EdgeInsets padding;
 
   final Widget? Function(BuildContext, int) itemBuilder;
@@ -12,6 +14,7 @@ class AppListViewLayout extends StatelessWidget {
   const AppListViewLayout({
     super.key,
     required this.itemCount,
+    this.physics = const ScrollPhysics(),
     this.scrollDirection = Axis.horizontal,
     this.padding = EdgeInsets.zero,
     required this.itemBuilder,
@@ -21,6 +24,7 @@ class AppListViewLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       shrinkWrap: true,
+      physics: physics,
       scrollDirection: scrollDirection,
       padding: padding,
       itemCount: itemCount,

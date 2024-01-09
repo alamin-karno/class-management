@@ -9,26 +9,30 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
-            HomeAppBar(),
-            SizedBox(
-              height: AppSizes.spaceBtwSections + AppSizes.spaceBtwItems,
-            ),
-            SectionHeadingWidget(
-              title: 'Courses',
-              subTitle: 'Your running subjects',
-            ),
-            SizedBox(height: AppSizes.spaceBtwItems),
-            CourseListViewWidget(),
-            SizedBox(height: AppSizes.spaceBtwSections),
-            SectionHeadingWidget(
-              title: 'Your schedule',
-              subTitle: 'Upcoming classes and tasks',
-            ),
-          ],
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: const [
+              HomeAppBar(),
+              SizedBox(
+                height: AppSizes.spaceBtwSections + AppSizes.spaceBtwItems,
+              ),
+              SectionHeadingWidget(
+                title: 'Courses',
+                subTitle: 'Your running subjects',
+              ),
+              SizedBox(height: AppSizes.spaceBtwItems),
+              CourseListViewWidget(),
+              SizedBox(height: AppSizes.spaceBtwSections),
+              SectionHeadingWidget(
+                title: 'Your schedule',
+                subTitle: 'Upcoming classes and tasks',
+              ),
+              SizedBox(height: AppSizes.spaceBtwItems - AppSizes.sm),
+              ScheduleCourseListViewWidget(),
+            ],
+          ),
         ),
       ),
     );

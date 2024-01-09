@@ -3,6 +3,14 @@ class AppImages {
   static const String profileImage = "assets/images/profile/profile.jpeg";
   static const String profileImage1 =
       "https://avatars.githubusercontent.com/alamin-karno";
+  static const String profileImage2 =
+      'https://pbs.twimg.com/profile_images/1647278020795965440/XmUt4V4V_400x400.jpg';
+  static const String profileImage3 =
+      'https://avatars.githubusercontent.com/u/44565867?v=4';
+
+  /// ICONS
+  static const String icDotMenu = 'assets/icons/menu/ic_dot_menu.svg';
+  static const String icGoogleMeet = 'assets/icons/menu/ic_google_meet.svg';
 
   /// COURSE CATEGORY ICONS
   static const String icMathematics =

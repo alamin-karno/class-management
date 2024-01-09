@@ -29,7 +29,7 @@ class SectionHeadingWidget extends StatelessWidget {
             style: Theme.of(context)
                 .textTheme
                 .titleLarge!
-                .apply(color: AppColors.darkGrey),
+                .apply(color: AppColors.darkGrey.withOpacity(0.8)),
           ),
         ],
       ),
